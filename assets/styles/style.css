@@ -1,0 +1,145 @@
+body {
+    background-color: #faf8ef;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-game {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(187, 173, 160);
+    border: 0.2px solid rgb(187, 173, 160);
+    border-radius: 5px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.game-square {
+    width: 106px;
+    height: 106px;
+    background-color: rgb(205, 193, 180);
+    border: 0.2px solid rgb(205, 193, 180);
+    border-radius: 3px;
+    text-align: center;
+    line-height: 106px;
+    font-size: 40px;
+    transition: width 10s;
+}
+
+p {
+    color: black;
+    text-decoration: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#user-field {
+    width: 30vw;
+    margin: 5px 35vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around
+    /* text-align: center; */
+}
+
+#game-over {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(199, 43, 43, 0.705);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-over>h1 {
+    font-size: 5em;
+}
+
+#heading>h3 {
+    font-size: 60px;
+}
+
+button,
+#score-field {
+    width: 100px;
+    background-color: coral;
+    height: 60px;
+    border: none;
+    border-radius: 12px;
+}
+
+#score-field {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#reset-game {
+    padding-bottom: 20px;
+}
+
+#score-field>p {
+    font-size: 14px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+[val=x2] {
+    background: #eee4da;
+}
+
+[val=x4] {
+    background: #ede0c8;
+}
+
+[val=x8] {
+    color: #f9f6f2;
+    background: #f2b179;
+}
+
+[val=x16] {
+    color: #f9f6f2;
+    background: #f59563;
+}
+
+[val=x32] {
+    color: #f9f6f2;
+    background: #f67c5f;
+}
+
+[val=x64] {
+    color: #f9f6f2;
+    background: #f65e3b;
+}
+
+[val=x128] {
+    color: #f9f6f2;
+    background: #edcf72;
+}
+
+[val=x256] {
+    color: #f9f6f2;
+    background: #edcc61;
+}
+
+[val=x512] {
+    color: #f9f6f2;
+    background: #edc850;
+}
+
+[val=x1024] {
+    color: #f9f6f2;
+    background: #edc53f;
+}
+
+[val=x2048] {
+    color: #f9f6f2;
+    background: #edc22e;
+}
